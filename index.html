@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxx Fitness - Your Path to Peak Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="#home" style="text-decoration: none; color:aliceblue">FOXX FITNESS</a></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Body</h1>
+            <h2>Achieve Your Fitness Goals</h2>
+            <p>Join Foxx Fitness today and start your journey to a healthier lifestyle</p>
+            <a href="#membership" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 style="text-decoration: underline;">Why Choose Foxx Fitness?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Modern Equipment</h3>
+                    <p>State-of-the-art facilities with the latest fitness equipment</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professional trainers to guide your fitness journey</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Hours</h3>
+                    <p>Open 24/7 to fit your busy schedule</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery Section -->
+    <section id="gallery">
+        <h2 style="text-align: center; font-weight:bolder; text-decoration: underline; font-size:2.5rem">Our Gallery</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Gym Equipment">
+            </div>
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" alt="Weight Training">
+            </div>
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1571388208-0931c9cb884d" alt="Cardio Area">
+            </div>
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca" alt="Yoga Studio">
+            </div>
+          </div>
+          <button class="slider-btn prev" onclick="prevSlide()">❮</button>
+          <button class="slider-btn next" onclick="nextSlide()">❯</button>
+        </div>
+      </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2 style="text-decoration: underline;">Our Classes</h2>
+            <div class="class-grid">
+                <div class="class-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Strength Training">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase strength</p>
+                </div>
+                <div class="class-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Strength Training">
+                    <h3>HIIT</h3>
+                    <p>High-intensity interval training</p>
+                  </div>
+                <div class="class-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cardio">
+                    <h3>Cardio</h3>
+                    <p>Improve endurance and burn calories</p>
+                </div>
+                <div class="class-card">
+                    <img src="https://images.unsplash.com/photo-1599447421416-3414985c3521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Yoga">
+                    <h3>Yoga</h3>
+                    <p>Enhance flexibility and mental wellness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <h2 style="text-decoration: underline;">Membership Plans</h2>
+            <div class="membership-grid">
+                <div class="membership-card">
+                    <div class="plan-header">
+                        <h3>1 Month</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,999</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li style="font-weight: bolder;"><i class="fas fa-check"></i> No Extension</li>
+                        <li><i class="fas fa-check"></i> Access to Gym</li>
+                        <li><i class="fas fa-check"></i> Basic Equipment</li>
+                        <li><i class="fas fa-check"></i> Locker Access</li>
+                    </ul>
+                    <a href="#contact" class="plan-button">Choose Plan</a>
+                </div>
+                <div class="membership-card featured">
+                    <div class="plan-header">
+                        <h3>3 Months</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">4,999</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li style="font-weight: bolder;"><i class="fas fa-check"></i>Free 15 days Extension</li>
+                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                        <li><i class="fas fa-check"></i> Personal Trainer</li>
+                        <li><i class="fas fa-check"></i> Fitness Assessment</li>
+                    </ul>
+                    <a href="#contact" class="plan-button">Choose Plan</a>
+                </div>
+                <div class="membership-card ">
+                    <div class="plan-header">
+                        <h3>6 Months</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">8,999</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li style="font-weight: bolder;"><i class="fas fa-check"></i>Free 1 month Extension</li>
+                        <li><i class="fas fa-check"></i> All Previous Features</li>
+                        <li><i class="fas fa-check"></i> Nutrition Plan</li>
+                        <li><i class="fas fa-check"></i> Group Classes</li>
+                    </ul>
+                    <a href="#contact" class="plan-button">Choose Plan</a>
+                </div>
+                <div class="membership-card featured">
+                    <div class="plan-header">
+                        <h3>Yearly</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">15,999</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li style="font-weight: bolder;"><i class="fas fa-check"></i>Free 2 month Extension</li>
+                        <li><i class="fas fa-check"></i> All Premium Features</li>
+                        <li><i class="fas fa-check"></i> Free Supplements</li>
+                        <li><i class="fas fa-check"></i> Priority Access</li>
+                    </ul>
+                    <a href="#contact" class="plan-button">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 style="text-decoration: underline;">Get In Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <select required>
+                        <option value="">Select Membership Type</option>
+                        <option value="1month">1 Month Plan</option>
+                        <option value="3months">3 Months Plan</option>
+                        <option value="6months">6 Months Plan</option>
+                        <option value="yearly">Yearly Plan</option>
+                    </select>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Foxx Fitness</h3>
+                    <p>Your path to peak performance</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Fitness Street</p>
+                    <p>📞Phone: XXXXXXXXXX</p>
+                    <p>✉️Email: foxxfitness@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Foxx Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
